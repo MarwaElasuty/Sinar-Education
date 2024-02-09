@@ -19,6 +19,11 @@ nav {
     align-items: center;
     column-gap: 10px;
 }
+.mini-sized-btns{
+    display: none;
+}
+
+
 .ul-list {
     list-style: none;
     column-gap: 93px;
@@ -58,7 +63,7 @@ button[name="login-btn"] {
     width: 80px;
     border-radius: 10px;
     border-style: none;
-    font-size: 17px;
+    font-size: 21px;
 
 }
 
@@ -68,8 +73,8 @@ button[name="signup-btn"] {
     font-weight: 500;
     border-radius: 10px;
     border-style: none;
-    width: 80px;
-    font-size: 17px;
+    width: 96px;
+    font-size: 21px;
 }
 
 /* nav and ul media query */
@@ -77,6 +82,9 @@ button[name="signup-btn"] {
 
 
     .ul-list {
+        display: none;
+    }
+    .menu-btns{
         display: none;
     }
 
@@ -87,6 +95,11 @@ button[name="signup-btn"] {
     .burger-div {
         display: block;
     }
+    .mini-sized-btns{
+        display: block;
+        background-color: white;
+
+    }
 
     .display {
         display: flex;
@@ -101,7 +114,7 @@ button[name="signup-btn"] {
         font-size: 36px;
         right: 14px;
         text-align: center;
-        padding: 97px;
+        padding: 58px;
         border: 3px solid black;
         border-radius: 15px;
         background-color: white;
@@ -109,7 +122,7 @@ button[name="signup-btn"] {
 
     .nav-btns{
         flex-wrap: wrap;
-    width: 100px;
+        width: 100px;
     }
 
 }
@@ -117,6 +130,14 @@ button[name="signup-btn"] {
 @media screen and (max-width: 992px) and (min-width:786px) {
     .ul-list {
         display: none;
+    }
+    .menu-btns{
+        display: none;
+    }
+    .mini-sized-btns{
+        display: block;
+        background-color: white;
+
     }
 
     .burger-div {
@@ -140,7 +161,7 @@ button[name="signup-btn"] {
         z-index: 2;
         right: 14px;
         text-align: center;
-        padding: 97px;
+        padding: 58px;
         border: 3px solid black;
         border-radius: 15px;
         background-color: white;
@@ -156,42 +177,12 @@ button[name="signup-btn"] {
     .ul-list {
         display: none;
     }
-
-    .nav-btns{
-        flex-wrap: wrap;
-    width: 100px;
-    }
-    .burger-div {
+    .mini-sized-btns{
         display: block;
-    }
-
-    .display {
-        display: flex;
-        list-style: none;
-        flex-direction: column;
-        column-gap: 136px;
-        font-weight: 600;
-        font-size: 18px;
-        position: absolute;
-        top: 91px;
-        z-index: 2;
-        font-size: 36px;
-        right: 14px;
-        text-align: center;
-        padding: 97px;
-        border: 3px solid black;
-        border-radius: 15px;
         background-color: white;
+
     }
-
-
-    img[alt="burger-menu"] {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .ul-list {
+    .menu-btns{
         display: none;
     }
 
@@ -210,13 +201,58 @@ button[name="signup-btn"] {
         column-gap: 136px;
         font-weight: 600;
         font-size: 18px;
+        position: absolute;
+        top: 91px;
+        z-index: 2;
+        font-size: 36px;
+        right: 14px;
+        text-align: center;
+        padding: 58px;
+        border: 3px solid black;
+        border-radius: 15px;
+        background-color: white;
+    }
+
+
+    img[alt="burger-menu"] {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ul-list {
+        display: none;
+    }
+    .menu-btns{
+        display: none;
+    }
+    .mini-sized-btns{
+        display: block;
+        background-color: white;
+    }
+
+    .nav-btns{
+        flex-wrap: wrap;
+    width: 100px;
+    }
+    .burger-div {
+        display: block;
+    }
+
+    .display {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        column-gap: 136px;
+        font-weight: 600;
+        font-size: 18px;
         z-index: 2;
         position: absolute;
         top: 91px;
         font-size: 36px;
         right: 14px;
         text-align: center;
-        padding: 97px;
+        padding: 58px;
         border: 3px solid black;
         border-radius: 15px;
         background-color: white;
@@ -289,8 +325,10 @@ button[name="background-training-btn"] {
 }
 
 img[alt="back"] {
-    width: 100%;
+    width: 70%;
 }
+
+
 
 .training-btn-div {
     text-align: center;
@@ -363,7 +401,7 @@ img[alt="course"] {
 }
 
 .up-courses>div {
-    width: 17%;
+    width: 20%;
     padding: 15px;
     border: 1px solid black;
     border-radius: 10px;
@@ -390,7 +428,7 @@ img[alt="course"] {
 
 .reactions-statistics {
     display: flex;
-    column-gap: 15px;
+    column-gap: 12px;
     background-color: white;
     font-weight: 600;
 }
@@ -759,7 +797,7 @@ img[alt="brand-logo"] {
 .message1 {
     width: 89%;
     padding: 12px;
-    background-color: #eadeff;
+    background-color: #e4c6d9;
     border-top-left-radius: 29px;
     border-top-right-radius: 21px;
     border-bottom-right-radius: 15px;
@@ -767,11 +805,11 @@ img[alt="brand-logo"] {
 
 
 .message1>p {
-    background-color: #eadeff;
+    background-color: #e4c6d9;
 }
 
 .message2>p {
-    background-color: #eadeff;
+    background-color: #e4c6d9;
 }
 
 .main-calls {
@@ -946,7 +984,7 @@ img[alt="call2"] {
 }
 
 .live {
-    width: 25%;
+    width: 31%;
     margin: auto;
     padding: 73px;
     text-align: center;
@@ -1065,10 +1103,13 @@ button[name="go-to-trainigs-btn"] {
 .inner-card-imgs {
     width: 50%;
     background-color: white;
+    display: flex;
 }
 
+
+
 img[alt="cardimg"] {
-    width: 33%;
+    width: 100%;
 }
 
 button[name="start-training-btn"] {
@@ -1096,6 +1137,10 @@ button[name="start-training-btn"] {
     .card-desc>h3 {
         width: 100%;
     }
+    .inner-card-imgs{
+        width: 50%;
+    }
+
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
@@ -1108,6 +1153,9 @@ button[name="start-training-btn"] {
     }
 
     .card-desc>h3 {
+        width: 100%;
+    }
+    .inner-card-imgs{
         width: 100%;
     }
 }
@@ -1125,6 +1173,9 @@ button[name="start-training-btn"] {
     .card-desc>h3 {
         width: 100%;
     }
+    .inner-card-imgs{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1137,6 +1188,9 @@ button[name="start-training-btn"] {
     }
 
     .card-desc>h3 {
+        width: 100%;
+    }
+    .inner-card-imgs{
         width: 100%;
     }
 }
@@ -1215,10 +1269,10 @@ img[alt="reactions-client"] {
 
     width: 89%;
     padding: 12px;
-    background-color: #eadeff;
+    background-color: #e4c6d9;
     border-top-left-radius: 29px;
     border-top-right-radius: 21px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 img[alt="comm-client"] {
@@ -1236,12 +1290,12 @@ img[alt="client-mini-img"] {
 
 .margin-top-div {
     border: 1px solid gray;
-    padding: 17px;
-    width: 17%;
+    padding: 47px;
+    width: 57%;
     background-color: white;
     border-radius: 11px;
     text-align: center;
-    /* margin-left: 775px; */
+   
     margin-top: -103px;
     margin: auto;
     position: relative;
@@ -1260,6 +1314,7 @@ img[alt="client-mini-img"] {
 
 img[alt="clients"] {
     width: 100%;
+    margin-bottom: -60px;
 }
 
 /* testmonial media query */
@@ -1271,7 +1326,7 @@ img[alt="clients"] {
     .margin-top-div {
         border: 1px solid gray;
         padding: 16px;
-        width: 45%;
+        width: 64%;
         margin: auto;
         background-color: white;
         border-radius: 11px;
@@ -1287,7 +1342,7 @@ img[alt="clients"] {
 
     .margin-top-div {
         margin: auto;
-        width: 45%;
+        width: 64%;
     }
 
 }
@@ -1299,7 +1354,7 @@ img[alt="clients"] {
 
     .margin-top-div {
         margin: auto;
-        width: 46%;
+        width: 64%;
     }
 }
 
@@ -1324,7 +1379,7 @@ footer {
     display: flex;
     justify-content: center;
     padding: 30px;
-    margin-top: 170px;
+    margin-top: 71px;
     flex-wrap: wrap;
 }
 
@@ -1333,7 +1388,7 @@ footer {
 
 .footer-info {
     display: flex;
-    width: 30%;
+    width: 50%;
     column-gap: 80px;
     row-gap: 25px;
 }
@@ -1366,7 +1421,7 @@ input[name="footer-email"] {
 .input-w-subscribe {
     align-items: center;
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 
@@ -1394,6 +1449,8 @@ img[alt="footer-logo"] {
 @media screen and (max-width: 1200px) and (min-width:992px) {
     .footer-info {
         flex-wrap: wrap;
+        width: 100%;
+
     }
     input[name="footer-email"] {
         padding: 12px;
@@ -1426,6 +1483,7 @@ img[alt="footer-logo"] {
 @media screen and (max-width: 992px) and (min-width:786px) {
     .footer-info {
         flex-wrap: wrap;
+        width: 100%;
     }
     input[name="footer-email"] {
         padding: 12px;
@@ -1457,6 +1515,8 @@ img[alt="footer-logo"] {
 @media screen and (max-width: 786px) and (min-width:600px) {
     .footer-info {
         flex-wrap: wrap;
+        width: 100%;
+
     }
     input[name="footer-email"] {
         padding: 12px;
@@ -1488,6 +1548,8 @@ img[alt="footer-logo"] {
 @media screen and (max-width: 600px) {
     .footer-info {
         flex-wrap: wrap;
+        width: 100%;
+
     }
     input[name="footer-email"] {
         padding: 12px;
