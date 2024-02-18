@@ -114,7 +114,7 @@ button[name="signup-btn"] {
         font-size: 36px;
         right: 14px;
         text-align: center;
-        padding: 58px;
+        padding: 30px;
         border: 3px solid black;
         border-radius: 15px;
         background-color: white;
@@ -161,7 +161,7 @@ button[name="signup-btn"] {
         z-index: 2;
         right: 14px;
         text-align: center;
-        padding: 58px;
+        padding: 30px;
         border: 3px solid black;
         border-radius: 15px;
         background-color: white;
@@ -207,7 +207,7 @@ button[name="signup-btn"] {
         font-size: 36px;
         right: 14px;
         text-align: center;
-        padding: 58px;
+        padding: 30px;
         border: 3px solid black;
         border-radius: 15px;
         background-color: white;
@@ -252,7 +252,7 @@ button[name="signup-btn"] {
         font-size: 36px;
         right: 14px;
         text-align: center;
-        padding: 58px;
+        padding: 30px;
         border: 3px solid black;
         border-radius: 15px;
         background-color: white;
@@ -411,7 +411,7 @@ img[alt="course"] {
 }
 
 .down-courses>div {
-    width: 17%;
+    width: 20.2%;
     padding: 15px;
     border: 1px solid black;
     border-radius: 10px;
@@ -431,6 +431,8 @@ img[alt="course"] {
     column-gap: 12px;
     background-color: white;
     font-weight: 600;
+    flex-wrap: wrap;
+    row-gap: 15px;
 }
 
 .course-w-price {
@@ -601,11 +603,12 @@ img[alt="course"] {
     width: 100%;
     background-color: white;
     row-gap: 20px;
+    column-gap: 5px;
 }
 
 .icons-flex {
     display: flex;
-    column-gap: 100px;
+    column-gap: 21px;
     background-color: white;
 }
 
@@ -617,7 +620,9 @@ img[alt="course"] {
 .input-w-send-div {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     column-gap: 10px;
+    row-gap: 10px;
     background-color: white;
 }
 
@@ -635,7 +640,7 @@ img[alt="course"] {
 input[name="msg-txt"] {
     padding: 14px;
     background-color: #eadeff;
-    width: 250px;
+    width: 189px;
     border-radius: 10px;
     border-style: none;
     font-size: 16px;
@@ -665,9 +670,6 @@ img[alt="send-msg"] {
         width: 100%;
     }
 
-    .icons-flex {
-        column-gap: 50px;
-    }
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
@@ -675,9 +677,6 @@ img[alt="send-msg"] {
         width: 100%;
     }
 
-    .icons-flex {
-        column-gap: 50px;
-    }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
@@ -685,9 +684,6 @@ img[alt="send-msg"] {
         width: 100%;
     }
 
-    .icons-flex {
-        column-gap: 50px;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -695,9 +691,6 @@ img[alt="send-msg"] {
         width: 100%;
     }
 
-    .icons-flex {
-        column-gap: 50px;
-    }
 }
 
 .communication-header {
@@ -708,7 +701,7 @@ img[alt="send-msg"] {
     align-items: center;
     background-color: white;
     margin-top: 150px;
-    width: 65%;
+    width: 80%;
     margin: auto;
     border-radius: 10px;
 }
@@ -974,6 +967,18 @@ img[alt="call2"] {
     margin-bottom: 130px;
 }
 
+.statistics-container{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    align-items: center;
+    column-gap: 14px;
+    margin-bottom: 22px;
+}
+
 .statistics h4 {
     font-size: 40px;
     color: #A46DFF;
@@ -986,7 +991,7 @@ img[alt="call2"] {
 .live {
     width: 31%;
     margin: auto;
-    padding: 73px;
+    padding: 35px;
     text-align: center;
     background: linear-gradient(106.7deg, rgb(151, 150, 240) 12.1%, #ffceec 63.2%);
     margin-top: -60px;
@@ -1000,10 +1005,16 @@ img[alt="call2"] {
     .live {
         width: 100%;
     }
+    .statistics-container{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     .live {
+        width: 100%;
+    }
+    .statistics-container{
         width: 100%;
     }
 }
@@ -1012,10 +1023,16 @@ img[alt="call2"] {
     .live {
         width: 100%;
     }
+    .statistics-container{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .live {
+        width: 100%;
+    }
+    .statistics-container{
         width: 100%;
     }
 }
@@ -1291,15 +1308,15 @@ img[alt="client-mini-img"] {
 .margin-top-div {
     border: 1px solid gray;
     padding: 47px;
-    width: 57%;
+    width: 34%;
     background-color: white;
     border-radius: 11px;
     text-align: center;
-   
     margin-top: -103px;
     margin: auto;
     position: relative;
     z-index: 1;
+    margin-top: -7px;
 }
 
 .margin-top-div>h2 {
@@ -1325,7 +1342,6 @@ img[alt="clients"] {
 
     .margin-top-div {
         border: 1px solid gray;
-        padding: 16px;
         width: 64%;
         margin: auto;
         background-color: white;
@@ -1342,6 +1358,7 @@ img[alt="clients"] {
 
     .margin-top-div {
         margin: auto;
+
         width: 64%;
     }
 
@@ -1365,7 +1382,6 @@ img[alt="clients"] {
 
     .margin-top-div {
         border: 1px solid gray;
-        padding: 16px;
         width: 64%;
         background-color: white;
         border-radius: 11px;
@@ -1377,10 +1393,14 @@ img[alt="clients"] {
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 30px;
-    margin-top: 71px;
+
     flex-wrap: wrap;
+    width: 83%;
+    margin: auto;
+    margin-top: 71px;
+
 }
 
 
@@ -1388,9 +1408,11 @@ footer {
 
 .footer-info {
     display: flex;
-    width: 50%;
-    column-gap: 80px;
+    width: 47%;
+    column-gap: 76px;
+    font-size: 20px;
     row-gap: 25px;
+    justify-content: space-evenly;
 }
 
 .footer-info h3 {
@@ -1399,11 +1421,11 @@ footer {
 
 .footer-info p {
     padding-bottom: 15px;
-    width: 64%;
 }
 
 .brand-footer-div {
-    width: 30%;
+    font-size: 20px;
+    width: 48%;
 }
 
 .brand-footer-div>p {
@@ -1457,7 +1479,7 @@ img[alt="footer-logo"] {
         width: 200px;
     }
     .brand-footer-div>p{
-        width: 80%;
+        width: 100%;
     }
     .brand-footer-div{
         width: 100%;
@@ -1490,7 +1512,7 @@ img[alt="footer-logo"] {
         width: 141px;
     }
     .brand-footer-div>p{
-        width: 80%;
+        width: 100%;
     }
     .brand-footer-div{
         width: 100%;
@@ -1523,7 +1545,7 @@ img[alt="footer-logo"] {
         width: 141px;
     }
     .brand-footer-div>p{
-        width: 80%;
+        width: 100%;
     }
     .brand-footer-div{
         width: 100%;
@@ -1556,7 +1578,7 @@ img[alt="footer-logo"] {
         width: 141px;
     }
     .brand-footer-div>p{
-        width: 80%;
+        width: 100%;
     }
  
     .brand-footer-div{
